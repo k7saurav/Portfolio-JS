@@ -1,0 +1,427 @@
+/* This is the universal stylesheet for this website */
+
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Outfit:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+/* Custom CSS Variables */
+:root {
+   --color-1: #15ab6f; /* highlight color */
+   --color-2: #d0d8e2; /* font color */
+   --color-3: #c3cbd3; /* para dark color */
+   --color-ft: #1b212e;
+   --color-bg-1: #181a1b;
+   --color-bg-2: #232427;
+}
+
+/* CSS reset for the browser setting */
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+   font-family: "Outfit", sans-serif;
+}
+
+/* Utility Classes for universal uses */
+body {
+   background-color: #181a1b;
+   color: var(--color-2);
+}
+h1 {
+   font-size: 3.1rem;
+   color: var(--color-2);
+   font-family: "Tilt Neon", sans-serif;
+}
+h2 {
+   font-size: 2.1rem;
+   color: var(--color-2);
+   font-family: "Tilt Neon", sans-serif;
+}
+.journey-h2 h2{
+   font-size: 1.85rem;
+   font-weight: 400;
+}
+h4 {
+   font-size: 1.4rem;
+   color: var(--color-2);
+   padding: 5px 0;
+   font-weight: 400;
+}
+.education h4{
+   font-size: 1.25rem;
+}
+p {
+   font-size: 0.96rem;
+   color: var(--color-2);
+   font-weight: 300;
+}
+.p-dark {
+   color: var(--color-3);
+}
+.p-small {
+   font-size: 0.88rem;
+}
+.p-large {
+   font-size: 1.06rem;
+   padding: 10px 0;
+}
+.blank-height {
+   height: 4rem;
+}
+.blank-height-2 {
+   height: 2rem;
+}
+
+/* Utility Classes for responsive */
+@media only screen and (max-width: 768px) {
+   h1 {
+      font-size: 2.5rem;
+      line-height: 1.2;
+   }
+   h2 {
+      font-size: 1.85rem;
+   }
+   .journey-h2 h2{
+      font-size: 1.62rem;
+   }
+   .education h4{
+      font-size: 1.17rem;
+   }
+   h4 {
+      font-size: 1.25rem;
+   }
+   p {
+      font-size: 0.9rem;
+   }
+}
+@media only screen and (max-width: 576px) {
+   h1 {
+      font-size: 1.8rem;
+   }
+   h2 {
+      font-size: 1.52rem;
+   }
+   .journey-h2 h2{
+      font-size: 1.4rem;
+   }
+}
+
+/* Universal Button style */
+.btn {
+   padding: 8px;
+   width: 160px;
+   height: 40px;
+   background-color: var(--color-1);
+   color: white;
+   font-size: 0.95rem;
+   font-weight: 500;
+   border: 2px solid var(--color-1);
+   border-radius: 25px;
+   transition: 300ms;
+   cursor: pointer;
+}
+.btn-hero {
+   margin-top: 1rem;
+}
+.btn:hover {
+   background-color: transparent;
+   /* color: var(--color-1); */
+}
+
+.btn-img-hover{
+   width: 120px;
+   height: 35px;
+   padding: 0;
+   margin-top: 5px;
+}
+
+/* .btn-2 {
+   padding: 10px 25px;
+   font-size: 0.94rem;
+   font-weight: 500;
+   border: 2px solid lightgray;
+   border-radius: 25px;
+   transition: 300ms;
+   cursor: pointer;
+}
+.btn-2:hover {
+   border-color: var(--color-1);
+   background-color: var(--color-1);
+   color: white;
+} */
+
+/* ============ Image Hover effects ============ */
+.img-hover {
+   position: relative;
+   width: 100%;
+   text-align: left;
+}
+.img-hover * {
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   -webkit-transition: all 0.4s ease-in;
+   transition: all 0.4s ease-in;
+}
+.img-hover img {
+   position: relative;
+   max-width: 100%;
+   /* vertical-align: top; */
+}
+.img-hover figcaption {
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   opacity: 0;
+   padding: 12px 15px;
+}
+.img-hover-text{
+   display: flex;
+   height: 100%;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+.img-hover figcaption:before,
+.img-hover figcaption:after {
+   width: 1px;
+   height: 0;
+}
+.img-hover figcaption:before {
+   right: 0;
+   top: 0;
+}
+.img-hover figcaption:after {
+   left: 0;
+   bottom: 0;
+}
+
+/* .img-hover a {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   z-index: 1;
+} */
+
+.img-hover:before,
+.img-hover:after,
+.img-hover figcaption:before,
+.img-hover figcaption:after {
+   position: absolute;
+   content: "";
+   background-color: #ffffff;
+   z-index: 1;
+   -webkit-transition: all 0.4s ease-in;
+   transition: all 0.4s ease-in;
+   opacity: 0.8;
+}
+.img-hover:before,
+.img-hover:after {
+   height: 1px;
+   width: 0%;
+}
+.img-hover:before {
+   top: 0;
+   left: 0;
+}
+.img-hover:after {
+   bottom: 0;
+   right: 0;
+}
+.img-hover:hover img {
+   opacity: 0.4;
+}
+.img-hover:hover figcaption {
+   opacity: 1;
+}
+.img-hover:hover figcaption:before,
+.img-hover:hover figcaption:after {
+   height: 100%;
+}
+.img-hover:hover:before,
+.img-hover:hover:after {
+   width: 100%;
+}
+.img-hover:hover:before,
+.img-hover:hover:after,
+.img-hover:hover figcaption:before,
+.img-hover:hover figcaption:after {
+   opacity: 0.1;
+}
+
+
+/* ============ Image Hover effects ============ */
+
+
+/* ~~ end of universal styling ~~ */
+
+/* Header styling */
+.header {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   padding: 10px 25px;
+   background-color: transparent;
+   position: fixed;
+   top: 0;
+   z-index: 11;
+   transition: all 500ms;
+}
+
+/* active event for changing header color on scroll */
+.header.active {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   padding: 10px 25px;
+   background-color: rgba(1, 1, 1, 0.8);
+   position: fixed;
+   top: 0;
+   z-index: 11;
+   transition: all 500ms;
+}
+
+.logo > a img {
+   width: 50px;
+   border-radius: 25px;
+}
+
+/* Navbar styling */
+.navbar {
+   display: flex;
+   width: 80%;
+   align-items: center;
+   justify-content: center;
+}
+.nav-links {
+   display: flex;
+}
+.nav-links li {
+   list-style: none;
+}
+.nav-links li a {
+   text-decoration: none;
+   padding: 5px 10px;
+   margin: 4px;
+   color: white;
+   font-size: 1rem;
+   /* border: 1px solid transparent; */
+   border-radius: 2px;
+   transition: 300ms;
+}
+.nav-links li a:hover {
+   border-bottom: 2px solid var(--color-1);
+   /* background-color: var(--color-1); */
+}
+.nav-links li a.activeNav{
+   color: var(--color-1);
+   border-bottom: 1px solid var(--color-1);
+}
+
+/* toggle-btn for responsive design */
+.toggle-btn {
+   color: white;
+   font-size: 1.5rem;
+   cursor: pointer;
+   display: none;
+}
+/* dropdown menu for responsive design */
+.dropdown-menu {
+   display: none;
+   position: absolute;
+   right: 2rem;
+   top: 70px;
+   width: 300px;
+   height: 0;
+   background: rgba(38, 38, 38, 0.113);
+   backdrop-filter: blur(15px);
+   border-radius: 12px;
+   overflow: hidden;
+}
+.dropdown-menu.open {
+   height: 260px;
+}
+
+/* Footer Styling */
+footer {
+   background-color: var(--color-ft);
+   padding: 1.5rem 0;
+}
+footer p {
+   font-size: 0.96rem;
+}
+
+/* Footer Copyright style */
+#copyright {
+   display: block;
+   margin: 5px auto;
+   text-align: center;
+   width: 60%;
+   background-color: #111111;
+   padding: 8px;
+   border-radius: 25px;
+}
+
+/* Responsive designing for other devices */
+@media only screen and (max-width: 768px) {
+   /* header responsiveness */
+   .navbar {
+      display: none;
+   }
+   .header {
+      justify-content: space-between;
+   }
+   .header.active {
+      justify-content: space-between;
+   }
+   .links-dropdown {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 0;
+   }
+   .links-dropdown li {
+      padding: 10px;
+   }
+   .logo > a img {
+      width: 44px;
+      border-radius: 22px;
+   }
+   .toggle-btn {
+      display: block;
+   }
+   .dropdown-menu {
+      display: block;
+   }
+   /* end of header responsive design */
+
+   /* footer responsiveness */
+   #copyright {
+      width: 77%;
+   }
+   /* end of footer responsive design */
+}
+
+/* Responsive designing for other devices:- 2 */
+@media only screen and (max-width: 576px) {
+   /* responsiveness for dropdown */
+   .dropdown-menu {
+      left: 2rem;
+      width: unset;
+   }
+   .logo > a img {
+      width: 40px;
+      border-radius: 20px;
+   }
+   #copyright {
+      width: 94%;
+   }
+}

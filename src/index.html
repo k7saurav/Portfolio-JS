@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <!-- font awesome integration -->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+
+      <link rel="icon" type="image/png" href="favicon.png">
+
+      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="main.css" />
+
+      <title>Portfolio - Saurav</title>
+   </head>
+
+   <body>
+      <!-- Starts Header section here -->
+      <header class="header">
+         <div class="logo">
+            <a href="index.html"
+               ><img src="../public/images/img-Saurav.jpg" alt="logo"
+            /></a>
+         </div>
+         <!-- Navbar for wider screens -->
+         <nav class="navbar">
+            <ul class="nav-links">
+               <li><a href="#home" class="activeNav">HOME</a></li>
+               <li><a href="#aboutMe">ABOUT</a></li>
+               <li><a href="#skills">SKILLS</a></li>
+               <li><a href="#journey">JOURNEY</a></li>
+               <li><a href="#projects">PROJECTS</a></li>
+               <li><a href="#contact">CONTACT</a></li>
+            </ul>
+         </nav>
+         <!-- toggle bars for responsive design -->
+         <div class="toggle-btn">
+            <i class="fa-solid fa-bars"></i>
+         </div>
+         <!-- navigation links for responsive dropdown -->
+         <div class="dropdown-menu">
+            <ul class="nav-links links-dropdown">
+               <li><a href="#home" class="activeNav">HOME</a></li>
+               <li><a href="#aboutMe">ABOUT</a></li>
+               <li><a href="#skills">SKILLS</a></li>
+               <li><a href="#journey">JOURNEY</a></li>
+               <li><a href="#projects">PROJECTS</a></li>
+               <li><a href="#contact">CONTACT</a></li>
+            </ul>
+         </div>
+      </header>
+      <!-- Ends Header section here -->
+
+      <!-- Starts Main Section here -->
+      <main>
+         <!-- Starts hero section here -->
+         <section id="home">
+            <div class="home-banner flex-center">
+               <h2>Welcome!</h2>
+               <h1>I'm a Developer</h1>
+               <p class="p-large">
+                  Building Responsive Web Experiences || Aspiring Full-Stack
+                  Developer
+               </p>
+               <button class="btn btn-hero">Download CV</button>
+            </div>
+         </section>
+         <!-- Ends hero section here -->
+
+         <!-- Starts About me section here -->
+         <div class="blank-height"></div>
+         <section id="aboutMe">
+            <!-- heading for about me -->
+            <div class="heading-underline">
+               <h2 class="h2-underline">ABOUT ME</h2>
+            </div>
+            <div class="about-me">
+               <!-- content for about me -->
+               <div class="about-text flex-center">
+                  <p class="p-large p-dark">
+                     Passionate web development student with a knack for crafting user-friendly interfaces using HTML, CSS, JavaScript, and Tailwind CSS. While I thrive in the front-end world, I'm eager to expand my skillset by diving into backend technologies and transitioning towards full-stack development. I'm driven to contribute my ideas and full potential to the organization's growth, bringing a collaborative spirit and a commitment to continuous learning. <br>
+                     Open to connecting with web development professionals and exploring exciting opportunities.
+                  </p>
+               </div>
+               <!-- photo of mine -->
+               <div class="photo flex-center">
+                  <div class="photo-outer">
+                     <img
+                        src="../public/images/img-Saurav.jpg"
+                        alt=""
+                        width="210px"
+                     />
+                  </div>
+               </div>
+               <!-- personal details -->
+               <div class="info flex-center">
+                  <div class="info-list">
+                     <h4>Personal Infos:</h4>
+                     <ul>
+                        <li><span class="span-info">Name: </span>Kumar Saurav</li>
+                        <li><span class="span-info">Age: </span>24</li>
+                        <li><span class="span-info">Address: </span>Bihar</li>
+                        <li><span class="span-info">Phone: </span>7870989027</li>
+                        <li><span class="span-info">Email: </span>k7saurav.me@gmail.com</li>
+                        <li><span class="span-info">Language: </span>Hindi, English</li>
+                        <li><span class="span-info">Nationality: </span>Indian</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="blank-height-2"></div>
+         </section>
+         <!-- Ends About me section here -->
+
+         <!-- Starts skills section here -->
+         <section id="skills">
+            <div class="blank-height-2"></div>
+            <div class="heading-underline">
+               <h2 class="h2-underline" id="h2-skill">SKILLS</h2>
+            </div>
+            <div class="skills-container">
+            <!-- buttons for tab view -->
+               <div class="tab-buttons">
+                  <div class="tab-btn-border-responsive">
+                     <button class="tab-btn activeTab" id="btn-skill">Skills</button>
+                     <button class="tab-btn" id="btn-cert">Certification</button>
+                  </div>
+               </div>
+               <!-- content tab for tab view -->
+               <div class="tab-contents">
+                  <!-- skill contents starts -->
+                  <div id="tab-skill">
+                     <div class="tab-skills">
+                        <!-- skill html -->
+                        <div class="skill">
+                           <div class="skill-content">
+                              <p>HTML</p>
+                              <p>84%</p>
+                           </div>
+                           <div class="progress-bar">
+                              <div id="html-bar" class="the-bar" style="width: 84%;"></div>
+                           </div>
+                        </div>
+                        <!-- skill css -->
+                        <div class="skill">
+                           <div class="skill-content">
+                              <p>CSS</p>
+                              <p>70%</p>
+                           </div>
+                           <div class="progress-bar">
+                              <div id="css-bar" class="the-bar" style="width: 70%;"></div>
+                           </div>
+                        </div>
+                        <!-- skill javascript -->
+                        <div class="skill">
+                           <div class="skill-content">
+                              <p>JAVASCRIPT</p>
+                              <p>75%</p>
+                           </div>
+                           <div class="progress-bar">
+                              <div id="js-bar" class="the-bar" style="width: 75%;"></div>
+                           </div>
+                        </div>
+                        <!-- skill tailwind -->
+                        <div class="skill">
+                           <div class="skill-content">
+                              <p>TAILWIND CSS</p>
+                              <p>54%</p>
+                           </div>
+                           <div class="progress-bar">
+                              <div id="tailwind-bar" class="the-bar" style="width: 54%;"></div>
+                           </div>
+                        </div>
+                        <!-- skill react -->
+                        <div class="skill">
+                           <div class="skill-content">
+                              <p>REACT JS</p>
+                              <p>20%</p>
+                           </div>
+                           <div class="progress-bar">
+                              <div id="react-bar" class="the-bar" style="width: 20%;"></div>
+                           </div>
+                        </div>
+                        <!-- skill java -->
+                        <div class="skill">
+                           <div class="skill-content">
+                              <p>JAVA</p>
+                              <p>66%</p>
+                           </div>
+                           <div class="progress-bar">
+                              <div id="java-bar" class="the-bar" style="width: 66%;"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- skill contents ends -->
+
+                  <!-- certification contents starts -->
+                  <div id="tab-cert" style="display: none;">
+                     <div class="tab-certificate">
+                        <!-- certificate 1 -->
+                        <div class="certificate">
+                           <figure class="img-hover">
+                              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample72.jpg" alt="sample72"/>
+                              <figcaption>
+                                 <div class="img-hover-text">
+                                    <h4>Fletch Skinner</h4>
+                                    <p class=".p-small">I don't need to compromise my principles.</p>
+                                    <button class="btn btn-img-hover">Click me</button>
+                                 </div>
+                              </figcaption>
+                              <a href="#"></a>
+                           </figure>
+                        </div>
+                        <!-- certificate 2 -->
+                        <div class="certificate">
+                           <figure class="img-hover">
+                              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample72.jpg" alt="sample72"/>
+                              <figcaption>
+                                 <div class="img-hover-text">
+                                    <h4>Fletch Skinner</h4>
+                                    <p class=".p-small">I don't need to compromise my principles.</p>
+                                    <button class="btn btn-img-hover">Click me</button>
+                                 </div>
+                              </figcaption>
+                              <a href="#"></a>
+                           </figure>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- certification contents ends -->
+               </div>
+            </div>
+            <div class="blank-height-2"></div>
+         </section>
+         <!-- Ends skills section here -->
+
+         <!-- Starts Journey section here -->
+         <section id="journey">
+            <div class="blank-height-2"></div>
+            <div class="heading-underline">
+               <h2 class="h2-underline">JOURNEY</h2>
+            </div>
+            <div class="journey-container">
+               <!-- Experience starts here -->
+               <div class="experience-part education-part">
+                  <div class="journey-h2">
+                     <h2>Experience</h2>
+                  </div>
+                  <div class="education-details">
+                     <div class="education experience">
+                        <h4>WordPress Developer</h4>
+                        <p class="p-green">@ CodingExpo Technology</p>
+                        <p class="p-timeline">Jul 2022 - Oct 2022</p>
+                        <p class="p-small">Worked as an Intern WordPress Developer at CodingExpo Technology Pvt. Ldt.<p>
+                     </div>
+                     <div class="education experience">
+                        <h4>Heading</h4>
+                        <p class="p-green">@ Company Name</p>
+                        <p class="p-timeline">Period</p>
+                        <p class="p-small">Worked as.<p>
+                     </div>
+                  </div>
+               </div>
+               <!-- Education starts here -->
+               <div class="education-part">
+                  <div class="journey-h2">
+                     <h2>Education</h2>
+                  </div>
+                  <div class="education-details">
+                     <div class="education">
+                        <h4>MCA</h4>
+                        <p class="p-green">Lovely Professional University Online</p>
+                        <p class="p-timeline">2025</p>
+                        <p class="p-small">Field - Web development.<p>
+                     </div>
+                     <div class="education">
+                        <h4>B.Sc - IT</h4>
+                        <p class="p-green">TM Bhagalpur University</p>
+                        <p class="p-timeline">2021</p>
+                        <!-- <p class="p-small">Worked as.<p> -->
+                     </div>
+                     <div class="education">
+                        <h4>Intermediate</h4>
+                        <p class="p-green">BSEB Patna</p>
+                        <p class="p-timeline">2017</p>
+                        <p class="p-small">Maths, Physics, Chemistry.<p>
+                     </div>
+                     <div class="education">
+                        <h4>Matriculation</h4>
+                        <p class="p-green">BSEB Patna</p>
+                        <p class="p-timeline">2015</p>
+                        <p class="p-small">All General Subjects.<p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="blank-height-2"></div>
+         </section>
+         <!-- Ends Journey section here -->
+         
+         <!-- Starts Projects section here -->
+         <section id="projects">
+            <div class="blank-height-2"></div>
+            <div class="heading-underline">
+               <h2 class="h2-underline">PROJECTS</h2>
+            </div>
+            <div class="project-container">
+               <!-- project 1 -->
+               <div class="project">
+                  <figure class="img-hover">
+                     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample72.jpg" alt="sample72"/>
+                     <figcaption>
+                        <div class="img-hover-text">
+                           <h4>Fletch Skinner</h4>
+                           <p class=".p-small">I don't need to compromise my principles.</p>
+                           <button class="btn btn-img-hover">Click me</button>
+                        </div>
+                     </figcaption>
+                     <a href="#"></a>
+                  </figure>
+               </div>
+               <!-- project 2 -->
+               <div class="project">
+                  <figure class="img-hover">
+                     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample72.jpg" alt="sample72"/>
+                     <figcaption>
+                        <div class="img-hover-text">
+                           <h4>Fletch Skinner</h4>
+                           <p class=".p-small">I don't need to compromise my principles.</p>
+                           <button class="btn btn-img-hover">Click me</button>
+                        </div>
+                     </figcaption>
+                     <a href="#"></a>
+                  </figure>
+               </div>
+               <!-- project 3 -->
+               <div class="project">
+                  <figure class="img-hover">
+                     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample72.jpg" alt="sample72"/>
+                     <figcaption>
+                        <div class="img-hover-text">
+                           <h4>Fletch Skinner</h4>
+                           <p class=".p-small">I don't need to compromise my principles.</p>
+                           <button class="btn btn-img-hover">Click me</button>
+                        </div>
+                     </figcaption>
+                     <a href="#"></a>
+                  </figure>
+               </div>
+            </div>
+            <div class="blank-height-2"></div>
+         </section>
+         <!-- Ends Projects section here -->
+
+         <!-- Starts Contact section here -->
+         <section id="contact">
+            <div class="blank-height-2"></div>
+            <div class="heading-underline">
+               <h2 class="h2-underline">CONTACT</h2>
+            </div>
+            <div class="contact-container">
+               <!-- Reach to us or address part -->
+               <div class="reach-to-us">
+                  <h4>Reach to Me</h4>
+                  <!-- address part: address  -->
+                  <div class="address">
+                     <div class="icon">
+                        <img src="../public/icons/location.svg" alt="Location Icon" />
+                     </div>
+                     <div class="locatn-ph-email">
+                        <p class="p-green">Address:</p>
+                        <p>Mohanganj Tarapur, Munger (Bihar) - 813321</p>
+                     </div>
+                  </div>
+                  <!-- address part: Phone number -->
+                  <div class="address">
+                     <div class="icon">
+                        <img src="../public/icons/phone.svg" alt="Phone Icon" />
+                     </div>
+                     <div class="locatn-ph-email">
+                        <p class="p-green">Phone:</p>
+                        <p>7870989027</p>
+                     </div>
+                  </div>
+                  <!-- address part: email id -->
+                  <div class="address">
+                     <div class="icon">
+                        <img src="../public/icons/email.svg" alt="Email Icon" />
+                     </div>
+                     <div class="locatn-ph-email">
+                        <p class="p-green">Email:</p>
+                        <p>k7saurav.me@gmail.com</p>
+                     </div>
+                  </div>
+                  <!-- address part: email id -->
+                  <div class="address">
+                     <div class="icon">
+                        <img src="../public/icons/social.svg" alt="Social Icons" />
+                     </div>
+                     <div class="locatn-ph-email">
+                        <p class="p-green">Social Networks:</p>
+                        <div class="social">
+                           <a href=""></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Contact form part -->
+               <div class="get-in-touch">
+                  <h4>Get in Touch</h4>
+                  <div class="form">
+                     <form action="" method="get">
+                        <input
+                           type="text"
+                           class="fill"
+                           name="fName"
+                           placeholder="Full Name"
+                        />
+
+                        <input
+                           type="email"
+                           class="fill"
+                           name="Email"
+                           placeholder="Email"
+                        />
+
+                        <input
+                           type="tel"
+                           class="fill"
+                           name="Phone"
+                           placeholder="Phone"
+                        />
+
+                        <textarea
+                           name="message"
+                           class="fill msg"
+                           rows="4"
+                           maxlength="400"
+                           placeholder="Your message"
+                        ></textarea>
+
+                        <button type="submit" class="btn">Send Message</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="blank-height-2"></div>
+         </section>
+         <!-- Ends Contact section here -->
+
+      </main>
+      <!-- Ends Main Section here -->
+
+      <!-- Starts Footer Section here -->
+      <footer>
+         <div id="footer">
+            <div id="copyright">
+               <p class="p-small p-dark">
+                  © <span id="year">2024</span> Copyright: @k7Saurav
+               </p>
+            </div>
+         </div>
+      </footer>
+      <!-- Ends Footer Section here -->
+
+      <script src="app.js"></script>
+   </body>
+</html>
