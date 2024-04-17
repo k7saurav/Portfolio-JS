@@ -70,7 +70,7 @@
                   Building Responsive Web Experiences || Aspiring Full-Stack
                   Developer
                </p>
-               <button class="btn btn-hero">Download CV</button>
+               <button class="btn btn-hero" id="resume">Download CV</button>
             </div>
          </section>
          <!-- Ends hero section here -->
@@ -448,30 +448,38 @@
                         <input
                            type="text"
                            class="fill"
-                           name="fName"
+                           name="Name"
+                           id="name"
                            placeholder="Full Name"
+                           required
                         />
 
                         <input
                            type="email"
                            class="fill"
                            name="Email"
+                           id="email"
                            placeholder="Email"
+                           required
                         />
 
                         <input
                            type="tel"
                            class="fill"
                            name="Phone"
+                           id="phone"
                            placeholder="Phone"
+                           required
                         />
 
                         <textarea
-                           name="message"
+                           name="Message"
+                           id="message"
                            class="fill msg"
                            rows="4"
                            maxlength="400"
                            placeholder="Your message"
+                           required
                         ></textarea>
 
                         <button type="submit" class="btn">Send Message</button>

@@ -64,3 +64,11 @@ btnCert.addEventListener('click', ()=> {
    skillHeading.innerHTML = "CERTIFICATION";
 });
 // Code for tab section of skills completed...
+
+
+// Code for download resume.....
+let downloadCV = document.getElementById('resume');
+downloadCV.addEventListener('click', function() {
+   window.location.href = '../public/resume.pdf';
+});
+// Code for download resume completed...
