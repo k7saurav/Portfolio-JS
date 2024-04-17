@@ -72,3 +72,14 @@ downloadCV.addEventListener('click', function() {
    window.location.href = '../public/resume.pdf';
 });
 // Code for download resume completed...
+
+
+// Code for project popup.....
+/* let weather = document.getElementById('weather');
+
+function openPopup() {
+   window.open('../project-works/weather-app/weather.html');
+}
+
+weather.addEventListener('click', openPopup); */
+// Code for project popup completed...
