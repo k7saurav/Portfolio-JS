@@ -330,6 +330,18 @@
    outline: none;
    color: var(--color-3);
 }
+#btn-form{
+   width: 90px;
+   height: 34px;
+}
+.sending-msg{
+   display: flex;
+   align-items: center;
+}
+.sending-msg p{
+   margin-left: 12px;
+   font-style: italic;
+}
 
 ::placeholder {
    font-size: 16px;

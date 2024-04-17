@@ -74,6 +74,33 @@ downloadCV.addEventListener('click', function() {
 // Code for download resume completed...
 
 
+// Code for store form data into google sheet.....
+let form = document.querySelector("form");
+	form.addEventListener('submit', (e) => {
+		e.preventDefault();
+
+      document.querySelector('#user-msg').innerHTML = "Sending your message...";
+
+		let data = new FormData(form);
+
+		fetch('https://script.google.com/macros/s/AKfycbx6D_YNg-2oAB4MWQRyZrwlwRHOBwJC9HkyCODOS0E0bIg44yov_sjnuuM0FDVYbyiI/exec',
+      {
+			method:"POST",
+			body: data
+		})
+			.then(response => response.text())
+			.then(data => {
+            document.querySelector('#user-msg').innerHTML = data;
+         });
+
+      let body = document.querySelector('body');
+      body.addEventListener('click', () => {
+         document.querySelector('#user-msg').innerHTML = "";
+      })
+	});
+// Code for store form data into google sheet completed...
+
+
 // Code for project popup.....
 /* let weather = document.getElementById('weather');
 

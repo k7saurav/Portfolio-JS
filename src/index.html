@@ -70,7 +70,7 @@
                   Building Responsive Web Experiences || Aspiring Full-Stack
                   Developer
                </p>
-               <button class="btn btn-hero" id="resume">Download CV</button>
+               <button class="btn btn-hero flex-center" id="resume">Download CV</button>
             </div>
          </section>
          <!-- Ends hero section here -->
@@ -333,7 +333,7 @@
                         <div class="img-hover-text">
                            <h4>Weather</h4>
                            <p class=".p-small">Simple weather fetch by city name.</p>
-                           <button class="btn btn-img-hover" id="weather">View</button>
+                           <button class="btn btn-img-hover flex-center" id="weather">View</button>
                         </div>
                      </figcaption>
                   </figure>
@@ -346,7 +346,7 @@
                         <div class="img-hover-text">
                            <h4>Digital Clock</h4>
                            <p class=".p-small">Digital clock with Dark and Light mode.</p>
-                           <button class="btn btn-img-hover" id="clock">View</button>
+                           <button class="btn btn-img-hover flex-center" id="clock">View</button>
                         </div>
                      </figcaption>
                   </figure>
@@ -359,7 +359,7 @@
                         <div class="img-hover-text">
                            <h4>Calculator</h4>
                            <p class=".p-small">Simple calculator with arithmetic.</p>
-                           <button class="btn btn-img-hover" id="calculator">View</button>
+                           <button class="btn btn-img-hover flex-center" id="calculator">View</button>
                         </div>
                      </figcaption>
                   </figure>
@@ -372,9 +372,9 @@
                         <div class="img-hover-text">
                            <h4>Timer & Stopwatch</h4>
                            <p class=".p-small">Timer and Stopwatch with basic functionality.</p>
-                           <div>
-                              <button class="btn btn-img-hover" id="timer">View</button>
-                              <button class="btn btn-img-hover" id="stopwatch">View</button>
+                           <div class="div-two-btn">
+                              <button class="btn btn-img-hover flex-center id="timer">View</button>
+                              <button class="btn btn-img-hover flex-center" id="stopwatch">View</button>
                            </div>
                         </div>
                      </figcaption>
@@ -444,7 +444,7 @@
                <div class="get-in-touch">
                   <h4>Get in Touch</h4>
                   <div class="form">
-                     <form action="" method="get">
+                     <form>
                         <input
                            type="text"
                            class="fill"
@@ -481,8 +481,10 @@
                            placeholder="Your message"
                            required
                         ></textarea>
-
-                        <button type="submit" class="btn">Send Message</button>
+                        <div class="sending-msg">
+                           <button type="submit" class="btn flex-center" id="btn-form">Send</button>
+                           <p class="p-large" id="user-msg"></p>
+                        </div>
                      </form>
                   </div>
                </div>
