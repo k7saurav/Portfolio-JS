@@ -326,7 +326,7 @@
 .close-popup {
    position: absolute;
    top: 10px;
-   right: 30px;
+   right: 25px;
    cursor: pointer;
 }
 .close-popup i{
@@ -339,7 +339,7 @@
 .reach-to-us {
    width: 50%;
    padding: 2rem;
-   border-right: 2px solid var(--vertical-line);
+   border-right: 2px solid var(--color-1);
 }
 .get-in-touch {
    width: 50%;
@@ -551,7 +551,7 @@
    /* Contact section design starts */
    .reach-to-us {
       width: 100%;
-      border-bottom: 2px solid rgb(207, 96, 4);
+      border-bottom: 2px solid var(--color-1);
       border-right: none;
    }
    .get-in-touch {
