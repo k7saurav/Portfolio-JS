@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: rgb(87, 102, 121); */
+    background-color: #1b202b;
+    color: rgb(234, 248, 248);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 50%;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.box{
+    /* border: 2px solid black; */
+    padding: 1.5rem;
+    background-color: rgb(57, 67, 82);
+    border-radius: 5px;
+}
+
+.clock-box{
+    padding: 2rem;
+}
+
+.clock-time{
+    font-family: 'Aldrich', sans-serif;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.time-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #101116;
+    width: 100px;
+    padding: 1rem;
+    border-radius: 10px;
+
+}
+
+.t-text{
+    font-size: 1.2rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+.colon{
+    padding: 0.5rem;
+}
+#am-pm{
+    align-self: flex-start;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.clock-date{
+    font-family: 'Overlock SC', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+/* dark - light mode */
+#light, #dark{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 12px;
+}
+#dark{
+    display: none;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px){
+    .box{
+        padding: 0.75rem;
+    }  
+    .clock-box{
+        padding: 0.75rem;
+    }
+    .clock-time{
+        font-size: 1.75rem;
+    }
+    .time-text {
+        width: 70px;
+        padding: 0.5rem;
+    }
+    .t-text{
+        font-size: 0.8rem;
+    }
+    .colon{
+        padding: 0.25rem;
+    }
+    .clock-date{
+        font-size: 1.125rem;
+        padding-top: 0.4rem;
+    }
+    #am-pm{
+        font-size: 1.2rem;
+        padding: 0.4rem;
+    }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="weather-style.css">
+</head>
+<body>
+    <section>
+        <!-- Main Weather app view -->
+        <div class="card">
+            <!-- Search box for city search -->
+            <div class="search">
+                <input type="text" name="city" id="city-input" placeholder="Enter City Name" spellcheck="false">
+                <button type="submit" id="city-btn"><img src="./images/search.svg" alt="Search" width="30px"></button>
+            </div>
+            <div class="error">
+                <p>Invalid City Name...</p>
+            </div>
+            <!-- Time & Date view -->
+            <!-- <div class="date-time">
+                <div class="time">
+                    <span id="hrs">00</span>
+                    <span>:</span>
+                    <span id="min">00</span>
+                </div>
+                <div class="dates">
+                    <span id="day">Mon</span>
+                    <span>,</span>
+                    <span id="month">Jan</span>
+                    <span id="date">01</span>
+                </div>
+            </div> -->
+            
+            <!-- Location & Weather condition view -->
+            <div class="weather">
+                <div class="city-name">
+                    <span id="city">ExampleCity</span>
+                </div>
+                <div class="weather-icons">
+                    <img src="./images/clouds.png" width="60px" id="weather-icon">
+                </div>
+                <div class="w-condition">
+                    <span id="condition">Cloudly</span>
+                    <span id="temp">0°C</span>
+                </div>
+                <!-- Other weather details -->
+                <div class="more-weather-1">
+                    <div class="humidity more-w">
+                        <img src="./images/humidity.svg" width="20px" >
+                        <span class="more-w-text">Humidity</span>
+                        <span class="more-w-data" id="humidity">10%</span>
+                    </div>
+                    <div class="wind-speed more-w">
+                        <img src="./images/wind-speed.svg" width="20px">
+                        <span class="more-w-text">Wind Speed</span>
+                        <span class="more-w-data" id="speed">10 km/h</span>
+                    </div>
+                </div>
+                <div class="more-weather-2">
+                    <div class="visibility more-w">
+                        <img src="./images/visibility.svg" width="20px">
+                        <span class="more-w-text">Visibility</span>
+                        <span class="more-w-data" id="visibility">10 km</span>
+                    </div>
+                    <div class="visibility more-w">
+                        <img src="./Images/pressure.svg" width="20px">
+                        <span class="more-w-text">Air Pressure</span>
+                        <span class="more-w-data" id="pressure">10 hPa</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="weather-script.js"></script>
+</body>
+</html>

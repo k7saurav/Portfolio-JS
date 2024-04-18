@@ -102,11 +102,23 @@ let form = document.querySelector("form");
 
 
 // Code for project popup.....
-/* let weather = document.getElementById('weather');
-
-function openPopup() {
-   window.open('../project-works/weather-app/weather.html');
+function showPopup(popupId) {
+   const popupBox = document.getElementById(popupId);
+   popupBox.style.display = "block";
 }
+const closeButtons = document.querySelectorAll(".close-popup");
 
-weather.addEventListener('click', openPopup); */
+closeButtons.forEach(button => {
+   button.addEventListener("click", function() {
+      const popupBox = this.closest(".popup-box"); // Find closest container
+      popupBox.style.display = "none";
+   });
+});
+
+document.body.addEventListener("click", function(event) {
+      if (event.target.classList.contains("popup-box") || event.target.closest(".popup-box")) {
+      // Clicked on popup container or its element - prevent default behavior (if applicable)
+      event.stopPropagation(); // Optional: Prevent click from bubbling up to parent elements
+   }
+});
 // Code for project popup completed...

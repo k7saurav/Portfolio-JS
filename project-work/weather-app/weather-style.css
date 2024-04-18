@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #3f8fdf, #a3c4e9);
+}
+
+.card {
+    border: 1px solid rgb(145, 145, 145);
+    padding: 1.5rem;
+    border-radius: 5px;
+    background-color: hsla(210, 88%, 27%, 0.077);
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+.search input{
+    background: transparent;
+    border: none;
+    outline: none;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.24);
+    padding: 10px 15px;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+.search input::placeholder{
+    color: #fdfdfd;
+}
+.search button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.error{
+    padding-left: 1.6rem;
+    font-size: 1.1rem;
+    color: rgb(199, 24, 21);
+    font-style: italic;
+    display: none;
+}
+
+.weather, .w-condition{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+.city-name{
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+#temp{
+    padding: 5px;
+    font-size: 2.5rem;
+}
+#condition{
+    font-size: 1.1rem;
+    /* padding: 5px; */
+}
+
+.more-weather-1, .more-weather-2{
+    display: flex;
+    width: 100%;
+}
+.more-w{
+    display: flex;
+    flex-direction: column;
+    background: hsla(210, 88%, 27%, 0.205);
+    /* align-items: center; */
+    width: 44%;
+    margin: 5px auto;
+    padding: 10px 0 10px 14px;
+    border-radius: 8px;
+}
+.more-w-text{
+    font-size: 0.85rem;
+    color: #e4e4e4;
+    padding: 4px 0;
+}
+.more-w-data{
+    font-size: 1.2rem;
+}
+
+/* Responsive */
+@media only screen and (max-width: 576px){
+    .card {
+        padding: 1.2rem;
+    }
+    .search{
+        padding: 5px;
+    }
+    .error{
+        font-size: 1rem;
+    }
+    .more-w{
+        width: 44%;
+        margin: 5px auto;
+    }
+    .search input{
+        width: 180px;
+    }
+    .city-name{
+        padding: 0.75rem;
+    }
+}

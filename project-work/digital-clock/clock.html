@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digit Clock</title>
+    <link rel="stylesheet" href="clock-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Aldrich&family=Overlock+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="clock-box">
+                <div class="clock-time">
+                    <div class="time-text">
+                        <span class="time" id="hrs">00</span>
+                        <span class="t-text">Hours</span>
+                    </div>
+                    <span class="colon">:</span>
+                    <div class="time-text">
+                        <span class="time" id="min">00</span>
+                        <span class="t-text">Minuts</span>
+                    </div>
+                    <span class="colon">:</span>
+                    <div class="time-text">
+                        <span class="time" id="sec">00</span>
+                        <span class="t-text">Seconds</span>
+                    </div>
+                    <span class="time" id="am-pm">00</span>
+                </div>
+                <div class="clock-date">
+                    <span class="date" id="day">Mon</span>
+                    <span class="date">,</span>
+                    <span class="date" id="month">Jan</span>
+                    <span class="date" id="date">00</span>
+                    <span class="date">,</span>
+                    <span class="date" id="year">0000</span>
+                </div>
+            </div>
+            <!-- button for dark-light mode -->
+            <div class="dark-light">
+                <button id="dark"><img src="moon-dark.svg" width="30px"></button>
+                <button id="light"><img src="sun-light.svg" width="30px"></button>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="clock-script.js"></script>
+</body>
+</html>

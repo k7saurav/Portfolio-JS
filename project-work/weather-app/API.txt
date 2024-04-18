@@ -1,0 +1,3 @@
+API Key and URL for current weather data:
+
+https://api.openweathermap.org/data/2.5/weather?q=delhi&units=metric&appid=049e77ecf35bc3e4edbb5243ea74ce4a

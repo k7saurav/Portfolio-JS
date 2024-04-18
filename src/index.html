@@ -325,7 +325,7 @@
                <h2 class="h2-underline">PROJECTS</h2>
             </div>
             <div class="project-container">
-               <!-- project 1 -->
+               <!-- project 1 -  Weather -->
                <div class="project">
                   <figure class="img-hover">
                      <img src="../public/images/weather.png"/>
@@ -333,12 +333,23 @@
                         <div class="img-hover-text">
                            <h4>Weather</h4>
                            <p class=".p-small">Simple weather fetch by city name.</p>
-                           <button class="btn btn-img-hover flex-center" id="weather">View</button>
+                           <button onclick="showPopup('popup-weather')"
+                           class="btn btn-img-hover flex-center">
+                              View</button>
+                           <!-- popup container code - weather app -->
+                           <div class="popup-box flex-center" id="popup-weather" style="display: none;">
+                              <div class="position-iframe">
+                                 <iframe src="../project-work/weather-app/weather.html" frameborder="0"></iframe>
+                                 <button class="close-popup">
+                                    <i class="fa-solid fa-xmark"></i>
+                                 </button>
+                              </div>
+                           </div>
                         </div>
                      </figcaption>
                   </figure>
                </div>
-               <!-- project 2 -->
+               <!-- project 2 -  Digital Clock -->
                <div class="project">
                   <figure class="img-hover">
                      <img src="../public/images/clock.png"/>
@@ -346,12 +357,22 @@
                         <div class="img-hover-text">
                            <h4>Digital Clock</h4>
                            <p class=".p-small">Digital clock with Dark and Light mode.</p>
-                           <button class="btn btn-img-hover flex-center" id="clock">View</button>
+                           <button onclick="showPopup('popup-clock')" 
+                           class="btn btn-img-hover flex-center">View</button>
+                           <!-- popup container code - Digital Clock -->
+                           <div class="popup-box flex-center" id="popup-clock" style="display: none;">
+                              <div class="position-iframe">
+                                 <iframe src="../project-work/digital-clock/clock.html" frameborder="0"></iframe>
+                                 <button class="close-popup">
+                                    <i class="fa-solid fa-xmark"></i>
+                                 </button>
+                              </div>
+                           </div>
                         </div>
                      </figcaption>
                   </figure>
                </div>
-               <!-- project 3 -->
+               <!-- project 3 -  Calculator -->
                <div class="project">
                   <figure class="img-hover">
                      <img src="../public/images/calculator.png"/>
@@ -359,12 +380,22 @@
                         <div class="img-hover-text">
                            <h4>Calculator</h4>
                            <p class=".p-small">Simple calculator with arithmetic.</p>
-                           <button class="btn btn-img-hover flex-center" id="calculator">View</button>
+                           <button onclick="showPopup('popup-calculator')" 
+                           class="btn btn-img-hover flex-center">View</button>
+                           <!-- popup container code - Calculator -->
+                           <div class="popup-box flex-center" id="popup-calculator" style="display: none;">
+                              <div class="position-iframe">
+                                 <iframe src="../project-work/calculator/calculator.html" frameborder="0"></iframe>
+                                 <button class="close-popup">
+                                    <i class="fa-solid fa-xmark"></i>
+                                 </button>
+                              </div>
+                           </div>
                         </div>
                      </figcaption>
                   </figure>
                </div>
-               <!-- project 4 -->
+               <!-- project 4 - Timer and Stopwatch -->
                <div class="project">
                   <figure class="img-hover">
                      <img src="../public/images/timer-stopwatch.png"/>
@@ -373,8 +404,29 @@
                            <h4>Timer & Stopwatch</h4>
                            <p class=".p-small">Timer and Stopwatch with basic functionality.</p>
                            <div class="div-two-btn">
-                              <button class="btn btn-img-hover flex-center id="timer">View</button>
-                              <button class="btn btn-img-hover flex-center" id="stopwatch">View</button>
+                              <button onclick="showPopup('popup-timer')" 
+                              class="btn btn-img-hover flex-center">View</button>
+                              <!-- popup container code - Timer and Stopwatch -->
+                              <div class="popup-box flex-center" id="popup-timer" style="display: none;">
+                                 <div class="position-iframe">
+                                    <iframe src="../project-work/timer/timer.html" frameborder="0"></iframe>
+                                    <button class="close-popup">
+                                       <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                 </div>
+                              </div>
+
+                              <button onclick="showPopup('popup-stopwatch')" 
+                              class="btn btn-img-hover flex-center">View</button>
+                              <!-- popup container code - weather app -->
+                              <div class="popup-box flex-center" id="popup-stopwatch" style="display: none;">
+                                 <div class="position-iframe">
+                                    <iframe src="../project-work/stopwatch/stopwatch.html" frameborder="0"></iframe>
+                                    <button class="close-popup">
+                                       <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                 </div>
+                              </div>
                            </div>
                         </div>
                      </figcaption>

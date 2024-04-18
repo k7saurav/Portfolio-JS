@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="timer-style.css">
+</head>
+<body>
+    <section>
+        <h2>Timer</h2>
+        <!-- for timer -->
+        <div class="box" id="timer">
+            <div class="box-times">
+                <!-- input boxes for set timer -->
+                <div class="times">
+                    <input type="number" name="hour" id="hour" class="time-err" placeholder="00" value=""  min="0" max="23">
+                    <p>Hours</p>
+                </div>
+                <div class="times">
+                    <input type="number" name="minute" id="minute" class="time-err" placeholder="00" value=""  min="0" max="59">
+                    <p>Minutes</p>
+                </div>
+                <div class="times">
+                    <input type="number" name="second" id="second" class="time-err" placeholder="00" value=""  min="0" max="59">
+                    <p>Seconds</p>
+                </div>
+            </div>
+            <div class="errors">
+                <p id="error"></p>
+            </div>
+            <!-- buttons -->
+            <div class="buttons">
+                <button class="btn" id="pause"><img src="images/pause.svg" width="55px"></button>
+                <!-- <button class="btn" id="resume">Resume</button> -->
+                <button class="btn" id="start"><img src="images/play.svg" width="55px"></button>
+                <button class="btn" id="reset"><img src="images/timer-reset.svg" width="40px"></button>
+            </div>
+        </div>     
+    </section>
+
+    <script src="timer-script.js"></script>
+</body>
+</html>
