@@ -69,7 +69,7 @@ btnCert.addEventListener('click', ()=> {
 // Code for download resume.....
 let downloadCV = document.getElementById('resume');
 downloadCV.addEventListener('click', function() {
-   window.location.href = '../public/resume.pdf';
+   window.location.href = './public/resume.pdf';
 });
 // Code for download resume completed...
 
