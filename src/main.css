@@ -12,6 +12,7 @@
    --tab-btn-bg: rgb(54, 56, 59);
    --tab-btn-shadow: rgb(26, 30, 31);
    --progress-bar: #fd4766;
+   --vertical-line: rgb(207, 96, 4);
 }
 
 .flex-center {
@@ -32,6 +33,16 @@
    background-color: var(--color-bg);
    text-align: center;
 }
+/* Home section H1 animation */
+.h1-tag{
+   overflow: hidden;
+}
+.h1-span{
+   color: var(--color-1);
+}
+
+
+
 /* homepage banner design ends */
 
 /* About me section design starts */
@@ -94,6 +105,10 @@
 .info li {
    list-style: none;
    margin: 4px 0;
+}
+.info-list a{
+   text-decoration: none;
+   color: var(--color-2);
 }
 
 .span-info {
@@ -324,7 +339,7 @@
 .reach-to-us {
    width: 50%;
    padding: 2rem;
-   border-right: 2px solid rgb(207, 96, 4);
+   border-right: 2px solid var(--vertical-line);
 }
 .get-in-touch {
    width: 50%;
@@ -337,6 +352,10 @@
 .icon img {
    width: 30px;
    margin: 6px 12px 0px 0px;
+}
+.locatn-ph-email a{
+   text-decoration: none;
+   color: var(--color-2);
 }
 .form {
    display: flex;

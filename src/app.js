@@ -122,3 +122,10 @@ document.body.addEventListener("click", function(event) {
    }
 });
 // Code for project popup completed...
+
+
+// Code for auto change year in footer.....
+let date = new Date();
+let year = date.getFullYear();
+document.getElementById("year").innerHTML = year;
+// Code for auto change year in footer completed...
