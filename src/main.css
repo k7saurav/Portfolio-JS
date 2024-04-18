@@ -33,14 +33,9 @@
    background-color: var(--color-bg);
    text-align: center;
 }
-/* Home section H1 animation */
-.h1-tag{
-   overflow: hidden;
-}
-.h1-span{
+.h2-green{
    color: var(--color-1);
 }
-
 
 
 /* homepage banner design ends */

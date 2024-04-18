@@ -129,3 +129,13 @@ let date = new Date();
 let year = date.getFullYear();
 document.getElementById("year").innerHTML = year;
 // Code for auto change year in footer completed...
+
+
+// Code for typing text animation (using cdn link) in heading.....
+let typed = new Typed('#auto-type', {
+   strings: ["Developer", "Programmer"],
+   typeSpeed: 120,
+   backSpeed: 120,
+   loop: true
+});
+// Code for typing text animation in heading completed...
